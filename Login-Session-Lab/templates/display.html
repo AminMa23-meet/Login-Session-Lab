@@ -6,9 +6,10 @@
 	<title></title>
 </head>
 <body>
-
-<!-- Display the variables from the login session here!
- -->
-
+{% for n in range(name | length) %}
+<h1>Name:{{name[n]}}</h1>
+<h2>Age:{{age[n]}}</h2>
+<h2>Message:{{message[n]}}</h2>
+{%endfor%}
 </body>
 </html>
